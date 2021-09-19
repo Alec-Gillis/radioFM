@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { AuthorizationComponent } from './core/components/authorization/authorization.component';
 
 @Component({
   selector: 'app-root',

@@ -12,13 +12,19 @@ export class LikedSongsComponent implements OnInit {
   constructor(private spotify: SpotifyGeneralService) { }
 
   topSongs: any;
+  t: any;
 
   ngOnInit(): void {
     this.getTopSongs()
+    this.test()
   }
 
   getTopSongs(): void {
     this.spotify.getTopTracks().subscribe(tracks => this.topSongs = tracks);
+  }
+
+  test(): void {
+    this.spotify.test().subscribe(data => this.t = data);
   }
 
 }

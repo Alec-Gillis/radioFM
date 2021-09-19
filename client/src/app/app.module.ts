@@ -7,11 +7,13 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HttpClientModule } from '@angular/common/http';
 
 import { LikedSongsComponent } from './core/components/liked-songs/liked-songs.component';
+import { AuthorizationComponent } from './core/components/authorization/authorization.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    LikedSongsComponent
+    LikedSongsComponent,
+    AuthorizationComponent
   ],
   imports: [
     BrowserModule,
