@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Observable, of } from 'rxjs';
-import { SpotifyGeneralService } from '../spotify-general.service';
+import { SpotifyGeneralService } from '../../services/spotify-general.service';
 
 @Component({
   selector: 'app-liked-songs',
@@ -12,7 +12,6 @@ export class LikedSongsComponent implements OnInit {
   constructor(private spotify: SpotifyGeneralService) { }
 
   topSongs: any;
-
 
   ngOnInit(): void {
     this.getTopSongs()

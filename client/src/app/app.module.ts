@@ -4,8 +4,9 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { HttpClientModule } from '@angular/common/http';
 
-import { LikedSongsComponent } from './liked-songs/liked-songs.component';
+import { LikedSongsComponent } from './core/components/liked-songs/liked-songs.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,9 @@ import { LikedSongsComponent } from './liked-songs/liked-songs.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    // import HttpClientModule after BrowserModule
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
